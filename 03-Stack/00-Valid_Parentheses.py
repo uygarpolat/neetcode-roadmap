@@ -40,14 +40,14 @@ class Solution:
 		stack = []
         
 		for c in s:
-			if c in closings:
+			if c in closings and stack:
 				index = closings.index(c)
 				popped = stack.pop()
 				if popped != openings[index]:
 					return False
 			else:
 				stack.append(c)
-		return True
+		return not stack
     
 def main():
 	solution = Solution()
@@ -60,6 +60,14 @@ def main():
 	assert(result == True)
     
 	s = "[(])"
+	result = solution.isValid(s)
+	assert(result == False)
+
+	s = "]"
+	result = solution.isValid(s)
+	assert(result == False)
+
+	s = "["
 	result = solution.isValid(s)
 	assert(result == False)
     
