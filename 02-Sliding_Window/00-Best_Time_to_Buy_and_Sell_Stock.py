@@ -27,26 +27,6 @@ Constraints:
 
 1 <= prices.length <= 100
 0 <= prices[i] <= 100
-
-
-Recommended Time & Space Complexity
-You should aim for a solution with O(n) time and O(1) space, where n is the size of the input array.
-
-
-Hint 1
-A brute force solution would be to iterate through the array with index i, considering it as the day to buy, and trying all possible options for selling it on the days to the right of index i. This would be an O(n^2) solution. Can you think of a better way?
-
-
-Hint 2
-You should buy at a price and always sell at a higher price. Can you iterate through the array with index i, considering it as either the buying price or the selling price?
-
-
-Hint 3
-We can iterate through the array with index i, considering it as the selling value. But what value will it be optimal to consider as buying point on the left of index i?
-
-
-Hint 4
-We are trying to maximize profit = sell - buy. If the current i is the sell value, we want to choose the minimum buy value to the left of i to maximize the profit. The result will be the maximum profit among all. However, if all profits are negative, we can return 0 since we are allowed to skip doing transaction.
 """
 
 from typing import List
