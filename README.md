@@ -4,4 +4,4 @@ Working my way through NeetCode’s Roadmap to level up my data structures and a
 
 Topics (and their current progress levels):
 
-![Screenshot 2025-07-10 at 21 12 20](https://github.com/user-attachments/assets/3c29a2c0-29c2-4919-b063-c1a8f09ec31d)
+![Screenshot 2025-07-11 at 23 54 46](https://github.com/user-attachments/assets/f0fdc9e5-3c10-47a9-be94-69bfd17f70c8)
