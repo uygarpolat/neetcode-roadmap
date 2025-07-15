@@ -52,8 +52,7 @@ class Solution:
 			time = localTime
 
 			for adjTime, adjNode in edges[localNode]:
-				if adjNode not in visited:
-					heapq.heappush(heap, (adjTime + localTime, adjNode))
+				heapq.heappush(heap, (adjTime + localTime, adjNode))
 
 		return time if len(visited) == n else -1
 	
