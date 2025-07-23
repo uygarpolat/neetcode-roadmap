@@ -35,7 +35,7 @@ class Solution:
             tmp = curMax * num
             curMax = max(num * curMax, num * curMin, num)
             curMin = min(tmp, num * curMin, num)
-            res = max(res, curMax)
+            result = max(result, curMax)
         return result
 
 def main():
