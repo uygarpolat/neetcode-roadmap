@@ -39,9 +39,9 @@ class Solution:
 
 		for index, c in enumerate(s):
 			if c == "(":
-				stack_left_par.append(c)
+				stack_left_par.append(index)
 			elif c == "*":
-				stack_asterisk.append(c)
+				stack_asterisk.append(index)
 			else:
 				if not stack_left_par and not stack_asterisk:
 					return False
