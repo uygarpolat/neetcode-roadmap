@@ -34,7 +34,7 @@ class Solution:
 			if curr_bit:
 				result |= (1 << i)
 			
-		if result > mask:
+		if result > 0x7FFFFFFF:
 			result = ~(result ^ mask)
 			
 		return result
@@ -43,6 +43,7 @@ def main():
 	solution = Solution()
 	assert solution.getSum(1,1) == 2
 	assert solution.getSum(4,7) == 11
+	assert solution.getSum(-12,-8) == -20
 	print("✅ All tests passed!")
 
 if __name__ == "__main__":
